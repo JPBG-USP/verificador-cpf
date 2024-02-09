@@ -2,11 +2,10 @@
 
 using namespace std;
 bool verificar_cpf(int cpf[11]);
-// 496 118 208 79
-// 152 923 248 17
+
 int main(){
 
-    int cpf_teste[11] = {4, 9, 6, 1, 1, 8, 2, 0, 8, 7, 9};
+    int cpf_teste[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0};
 
     cout << verificar_cpf(cpf_teste);
 
