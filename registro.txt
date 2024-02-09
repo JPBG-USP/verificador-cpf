@@ -1,0 +1,7 @@
+1 digito por 10
+2 digito por 9
+Soma todos
+Pega o resto da divisão por 11
+se for 0 ou 1 é 0
+se for qq outro algarismos subtraria esse de 11, o resultado é o 1º digito verificador
+Para os segundo digito verificador e o msm, mas começa multiplicando por 11
