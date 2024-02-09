@@ -1,2 +1,6 @@
 # verificador-cpf
-Aqui se encontra um projeto de um código aberto em C++ para verificar se o CPF está correto. Mais informações no arquivo README
+Olá, esse programa apresenta uma função para verificação se um CPF informado via um vetor de inteiros está correto. Em todos os sites e programas que realizam essa verificação eles não consultam a base dados com todos os CPFs, já que o mesmo se trata de um dado pessoal. O que ocorre é que os ultimos dois digitos do CPF são calculados baseados nos outros 9, sendo esse dois os digitos verificadores.
+
+O calculo realizado é simples. Para encontrar o primeiro digito verificador deve se multiplicar o primeiro dígito (Da esquerda pra direita) por 10, o segundo por 9, o terceiro por 8, e assim por diantes. Após isso soma-se todos os números e pega o resto da divisão por 11. Caso o resto seja 0 ou 1, o digito verificador é 0, caso contrário o digito verificador é 11 menos o resto da divisão por 11. Para o segundo dígito verificador se faz o mesmo processo, só que agora começa multiplicando por 11 e não mais por 10, além disso você também multiplica o primeiro dígito verificador. E dessa forma que se verifica se um CPF está correto.
+
+Esse sistema não é perfeito, há a possibilidade que dois erros consecutivos se complemente, mas essa chance é muito pequena. E como fator de curiosidade, usamos o primeiro digito verificador para calcular o segundo pelo fato que isso se torna uma maneira de cobrir um erro no dígito verificador também.
